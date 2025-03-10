@@ -100,6 +100,6 @@ function changeLanguage(lang) {
 
 // Load saved language on page load
 document.addEventListener("DOMContentLoaded", () => {
-    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'no'; // Default to Norwegian
     changeLanguage(savedLanguage);
 });
