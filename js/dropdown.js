@@ -15,7 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
     dropdown.addEventListener('touchstart', toggleDropdown);
 
     dropdownItems.forEach(function(item) {
-        item.addEventListener('click', closeDropdown);
-        item.addEventListener('touchstart', closeDropdown);
+        item.addEventListener('click', function() {
+            closeDropdown();
+            toggleDropdown(); // Ensure the dropdown menu is properly toggled off
+        });
+        item.addEventListener('touchstart', function() {
+            closeDropdown();
+            toggleDropdown(); // Ensure the dropdown menu is properly toggled off
+        });
     });
 });
