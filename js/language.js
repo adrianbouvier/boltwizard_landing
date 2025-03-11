@@ -49,7 +49,7 @@ const translations = {
         "phone": "Telefon",  // New
         "howItWorksLink": "Hvordan det fungerer", // New
         "howItWorksTitle": "Hvordan det fungerer", // New
-        "howItWorksDescription": "Se denne videoen for å forstå hvordan Bolt Wizard forenkler dokumentasjon av bergstøtte for arbeidere på stedet." // New
+        "howItWorksDescription": "Se denne videoen for å forstå hvordan Bolt Wizard forenkler dokumentasjon av fjellsikring for arbeidere på stedet." // New
     }
 };
 
