@@ -11154,6 +11154,12 @@ body {
   }
 }
 
+
+#trialText {
+  color: #ffffff !important; /* Force the text color to white */
+  font-size: calc(100% + 3pt); /* Increase the font size by 3 points */
+}
+
 .signup-section {
   padding: 10rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
