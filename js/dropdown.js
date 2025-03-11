@@ -17,11 +17,16 @@ document.addEventListener('DOMContentLoaded', function() {
     dropdownItems.forEach(function(item) {
         item.addEventListener('click', function() {
             closeDropdown();
-            toggleDropdown(); // Ensure the dropdown menu is properly toggled off
         });
         item.addEventListener('touchstart', function() {
             closeDropdown();
-            toggleDropdown(); // Ensure the dropdown menu is properly toggled off
         });
+    });
+
+    // Close the dropdown when clicking outside of it
+    document.addEventListener('click', function(event) {
+        if (!dropdown.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            closeDropdown();
+        }
     });
 });

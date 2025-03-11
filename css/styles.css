@@ -11187,15 +11187,27 @@ body {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for 3D effect */
 }
 
-/* Ensure the dropdown items are properly spaced */
+/* Ensure the dropdown menu is hidden by default */
+#dropdownMenu {
+  display: none;
+}
+
+/* Show the dropdown menu when the 'show' class is added */
+#dropdownMenu.show {
+  display: block;
+}
+
+/* Add touch-friendly styles */
 .language-menu .dropdown-item {
   padding: 8px 12px;
   font-weight: bold;
+  cursor: pointer; /* Ensure the cursor changes to pointer */
 }
 
-/* Hover effect for a better look */
-.language-menu .dropdown-item:hover {
-  background-color: #f8f9fa; /* Light gray on hover */
+.language-menu .dropdown-item:hover,
+.language-menu .dropdown-item:focus {
+  background-color: #f8f9fa; /* Light gray on hover and focus */
+  outline: none; /* Remove default outline */
 }
 
 /* Ensures flags are properly aligned with the text */
@@ -11209,40 +11221,15 @@ body {
 
 /* Ensure the dropdown menu is visible on mobile devices */
 @media (max-width: 768px) {
-    .language-menu {
-        display: block; /* Ensure the menu is displayed */
-        width: 100%; /* Full width on mobile */
-    }
+  .language-menu {
+      display: block; /* Ensure the menu is displayed */
+      width: 100%; /* Full width on mobile */
+  }
 
-    .language-menu .dropdown-item {
-        padding: 12px 16px; /* Increase padding for touch devices */
-        font-size: 1rem; /* Increase font size for better readability */
-    }
-}
-
-/* Add touch-friendly styles */
-.language-menu .dropdown-item {
-    padding: 8px 12px;
-    font-weight: bold;
-    cursor: pointer; /* Ensure the cursor changes to pointer */
-}
-
-.language-menu .dropdown-item:hover,
-.language-menu .dropdown-item:focus {
-    background-color: #f8f9fa; /* Light gray on hover and focus */
-    outline: none; /* Remove default outline */
-}
-/* Ensures flags are properly aligned with the text */
-.dropdown-item img {
-  width: 20px;  /* Ensures all flags are the same size */
-  height: 15px;
-  margin-right: 8px; /* Adds space between flag and text */
-  vertical-align: middle; /* Aligns flag with text */
-  border-radius: 3px; /* Optional: Slightly rounded corners */
-
-
-.contact-section {
-  padding-top: 5rem;
+  .language-menu .dropdown-item {
+      padding: 12px 16px; /* Increase padding for touch devices */
+      font-size: 1rem; /* Increase font size for better readability */
+  }
 }
 .contact-section .card {
   border: 0;
@@ -11278,7 +11265,6 @@ body {
 .contact-section .social a:active {
   color: #fff;
 }
-
 .footer {
   padding: 5rem 0;
-}
+}}
