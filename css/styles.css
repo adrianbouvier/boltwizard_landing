@@ -11192,6 +11192,40 @@ body {
   background-color: #f8f9fa; /* Light gray on hover */
 }
 
+/* Ensures flags are properly aligned with the text */
+.dropdown-item img {
+  width: 20px;  /* Ensures all flags are the same size */
+  height: 15px;
+  margin-right: 8px; /* Adds space between flag and text */
+  vertical-align: middle; /* Aligns flag with text */
+  border-radius: 3px; /* Optional: Slightly rounded corners */
+}
+
+/* Ensure the dropdown menu is visible on mobile devices */
+@media (max-width: 768px) {
+    .language-menu {
+        display: block; /* Ensure the menu is displayed */
+        width: 100%; /* Full width on mobile */
+    }
+
+    .language-menu .dropdown-item {
+        padding: 12px 16px; /* Increase padding for touch devices */
+        font-size: 1rem; /* Increase font size for better readability */
+    }
+}
+
+/* Add touch-friendly styles */
+.language-menu .dropdown-item {
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer; /* Ensure the cursor changes to pointer */
+}
+
+.language-menu .dropdown-item:hover,
+.language-menu .dropdown-item:focus {
+    background-color: #f8f9fa; /* Light gray on hover and focus */
+    outline: none; /* Remove default outline */
+}
 
 /* Ensures flags are properly aligned with the text */
 .dropdown-item img {
