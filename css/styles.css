@@ -11226,7 +11226,6 @@ body {
     background-color: #f8f9fa; /* Light gray on hover and focus */
     outline: none; /* Remove default outline */
 }
-
 /* Ensures flags are properly aligned with the text */
 .dropdown-item img {
   width: 20px;  /* Ensures all flags are the same size */
